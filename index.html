@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página personal de Saúl Emilio Carrera Reyes, estudiante de Ingeniería en Sistemas Computacionales.">
+  <!-- El título aparece en la pestaña del navegador -->
+  <title>Saúl Emilio Carrera Reyes</title>
+
+  <!-- El CSS define la apariencia de la página: colores, tipografía y espacios -->
+  <style>
+    :root {
+      --papel: #fafcfd;
+      --cuadricula: #e6eef4;
+      --tinta: #14233b;
+      --tinta-suave: #4a5b73;
+      --margen: #d6453d;
+      --enlace: #1f5fbf;
+      --superficie: rgba(250, 252, 253, 0.82);
+    }
+
+    /* Cambia los colores automáticamente cuando el dispositivo usa modo oscuro */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --papel: #0f1a26;
+        --cuadricula: #1b2b3c;
+        --tinta: #e8eef5;
+        --tinta-suave: #a3b3c6;
+        --margen: #e8645c;
+        --enlace: #7fb2ff;
+        --superficie: rgba(15, 26, 38, 0.84);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--tinta);
+      background-color: var(--papel);
+      /* Fondo cuadriculado inspirado en una hoja de apuntes */
+      background-image:
+        linear-gradient(var(--cuadricula) 1px, transparent 1px),
+        linear-gradient(90deg, var(--cuadricula) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    /* Contenedor principal y línea roja del margen */
+    main {
+      width: min(100% - 2rem, 48rem);
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+      border-left: 2px solid var(--margen);
+      background: var(--superficie);
+      min-height: 100vh;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 7vw, 3.6rem);
+      margin: 0 0 0.6rem;
+      letter-spacing: -0.04em;
+    }
+
+    h2 {
+      font-size: 1.65rem;
+      margin: 2.8rem 0 0.8rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+      max-width: 65ch;
+    }
+
+    .cargo {
+      font-size: 1.12rem;
+      color: var(--tinta-suave);
+      margin-bottom: 0.3rem;
+    }
+
+    .introduccion {
+      margin-top: 1.2rem;
+    }
+
+    ul {
+      padding-left: 1.35rem;
+      margin: 0 0 1rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--enlace);
+      text-underline-offset: 0.2em;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--enlace);
+      outline-offset: 3px;
+    }
+
+    article {
+      padding: 1rem 0;
+      border-top: 1px solid var(--cuadricula);
+    }
+
+    article h3 {
+      font-size: 1.2rem;
+      margin: 0 0 0.25rem;
+    }
+
+    article p {
+      margin: 0;
+      color: var(--tinta-suave);
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--cuadricula);
+      font-size: 0.9rem;
+      color: var(--tinta-suave);
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Ajustes para celulares */
+    @media (max-width: 480px) {
+      body {
+        font-size: 1rem;
+      }
+
+      main {
+        padding: 2.2rem 1rem 3rem 1.2rem;
+      }
+
+      h2 {
+        margin-top: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- Encabezado: nombre y carrera -->
+    <header>
+      <h1>Saúl Emilio Carrera Reyes</h1>
+      <p class="cargo">Estudiante de primer semestre de Ingeniería en Sistemas Computacionales</p>
+      <p class="cargo">Universidad La Salle Chihuahua</p>
+      <p class="introduccion">Bienvenido a mi página personal. Aquí comparto algunos de mis intereses y los conocimientos que quiero desarrollar.</p>
+    </header>
+
+    <!-- Sobre mí: una breve presentación personal -->
+    <section>
+      <h2>Sobre mí</h2>
+      <p>Soy estudiante, me gusta la programación y soy autodidacta. Me interesan los videojuegos y todo lo que conlleva su desarrollo, desde la idea inicial hasta los elementos que forman parte de la experiencia de juego.</p>
+    </section>
+
+    <!-- Intereses: lista de temas que me llaman la atención -->
+    <section>
+      <h2>Mis intereses</h2>
+      <ul>
+        <li>El diseño de mecánicas de juego.</li>
+        <li>El modelado de personajes.</li>
+        <li>Los juegos de acción y los plataformeros complejos.</li>
+      </ul>
+    </section>
+
+    <!-- Aprendizaje: habilidades que quiero desarrollar -->
+    <section>
+      <h2>Lo que quiero aprender</h2>
+      <article>
+        <h3>Modelado 3D</h3>
+        <p>Estoy intentando aprender a crear modelos tridimensionales utilizando Blender.</p>
+      </article>
+      <article>
+        <h3>Programación</h3>
+        <p>Quiero comprender mejor el código, cómo funciona y cómo emplearlo para desarrollar mis propias ideas y proyectos.</p>
+      </article>
+    </section>
+
+    <!-- Contacto: información de contacto -->
+    <section>
+     <h2>Contacto</h2>
+      <p> Escríbeme a <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saulcarrera003%40gmail.com" target="_blank" rel="noopener noreferrer"> saulcarrera003@gmail.com</a>.</p>
+    </section>
+
+    <!-- GitHub: enlace a mi perfil de GitHub -->
+    <section>
+      <h2>GitHub</h2>
+      <p>Puedes consultar mi repositorio y mis proyectos en <a href="https://github.com/saulcarrera003/campo-profesional.git" target="_blank" rel="noopener noreferrer">mi perfil de GitHub</a>.</p>
+    </section>
+
+    <footer>
+      <p>Página personal creada con HTML y CSS.</p>
+    </footer>
+  </main>
+</body>
+</html>
