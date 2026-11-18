@@ -1,2 +1,6 @@
 # saulcarrera003.github.io
-Conóceme
+# Mi primera página web
+
+Página personal creada como actividad de Campo Profesional del Ingeniero.
+
+Herramienta de IA utilizada: ChatGPT.
